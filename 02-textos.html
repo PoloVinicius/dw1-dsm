@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        address{
+            background: yellow;
+            /*--Faz o elemento ficar em linha*/
+            display: inline;
+            font-style:normal; /*tira o italico*/
+            text-decoration: underline; /*outra e atual forma de sublinhar*/
+        }
+        strong{
+            color: red;
+        }
+        mark{
+            background-color:chartreuse
+        }
+        
+        /* primeiro inline quebrou o backgroud, o segundo deixou a informação em <p> na mesma lina */
+    </style>
+</head>
+<body>
+   <h1>Formatação de textos</h1>
+   <p>Orkitilson morava na <u>Rua: Que sobe e desce, 333</u>, e seu email era <u>orkutilson@gmail.com</u></p>
+   <!--Tag <u> = underline - obsoleto, não usar-->
+       <p>Orkitilson morava na <address>Rua: Que sobe e desce, 333</address>, e seu email era <address>orkutilson@gmail.com</address></p>
+       <!--TAG Adress = endereço (quebra linha automaticamente)-->
+<p>Ele estudava em uma escola estadual</b> e sua máteria preferida era <i>matemática</i></p>
+<!--<i> itálico (visual apenas, obsoleto e indexador do google não vê)
+    <b> negrito (bold) mesmo caso de cima-->  
+<p>Ele estudava em uma <strong>escola estadual</strong> e sua máteria preferida era <em>matemática</em></p>
+<!--<strong/> indica que o texto é mais importante, não apenas visual, mais forte
+<em/> emphasis (italico) mesma função do strong sem hieraquia-->
+
+<p> Ele também gosta de usar <mark>caneta marca texto</mark> para destacar os trechos mais importantes</p>
+
+<p>Sua professora achava que ele <strike>meio burro</strike>
+    não era muito inteligente, pois tinha dificuldade nas provas</p>
+    <!-- <strike> tachado, obsoleto não usar-->
+
+    ua professora achava que ele <del>meio burro</del>
+    não era muito inteligente, pois tinha dificuldade nas provas</p>
+    <!-- <del> texto apagado (SEMANTICO) indexador entende-->
+
+<p>Depos que fez a recuperação, sua nota foi de 6,7
+     <ins> o suficiente para sua aprovação</ins></p>
+     <!--<ins> destaca um texto inserido novamente, puramente semantico, o efeito original é sublinhado, mas pode mudar, inserindo condição no CSS -->
+<p> Orkutinson também gostava de fórmulas. Suas preferidas eram H<sub>2</sub>O e E = mc<sup>2</sup></p>
+<!--<sub> texto SUBescrito
+    <sup> texto sobreescrito (SUPerscript) -->
+</body>
+</html>
