@@ -20,10 +20,18 @@
         }
         
         /* primeiro inline quebrou o backgroud, o segundo deixou a informação em <p> na mesma lina */
+        h1 {text-align: center;
+        }
+       /* Valores para text-align left, right, center, justify */
+       h2 {text-align: justify; color: blue}
+       p.dir {text-align: right;}
+       /*p.dir é para identificar o <p> no <body>, lá ele é identificado por <p class="dir"*/
     </style>
 </head>
 <body>
    <h1>Formatação de textos</h1>
+   <h2>A saga do Orkutilson</h2>
+   <p class="dir">História baseada em fatos irreais</p>
    <p>Orkitilson morava na <u>Rua: Que sobe e desce, 333</u>, e seu email era <u>orkutilson@gmail.com</u></p>
    <!--Tag <u> = underline - obsoleto, não usar-->
        <p>Orkitilson morava na <address>Rua: Que sobe e desce, 333</address>, e seu email era <address>orkutilson@gmail.com</address></p>
@@ -50,6 +58,27 @@
      <!--<ins> destaca um texto inserido novamente, puramente semantico, o efeito original é sublinhado, mas pode mudar, inserindo condição no CSS -->
 <p> Orkutinson também gostava de fórmulas. Suas preferidas eram H<sub>2</sub>O e E = mc<sup>2</sup></p>
 <!--<sub> texto SUBescrito
-    <sup> texto sobreescrito (SUPerscript) -->
+    <sup> texto sobreescrito (SUPerscript) 
+    <quote> = citações no meio de um paragrafo, só avisa o indexador, não tem efeito visual
+    <blackquote> = um bloco de citação (com várias linhas, por exemplo-->
+
+<p>Sua frase favorita era <quote>"Penso, logo existo (Descartes)"</quote>. E seu trecho de música preferido era: </p>
+<blockquote>Se faltar calor, a gente esquenta <br>
+Se ficar pequeno, a gente aumenta <br>
+E se não for possível, a gente tenta <br>
+Vamos velejar no mar de lama <br>
+Se faltar o vento, a gente inventa <br>
+(Pose - Engenheiros do Hawaii)
+</blockquote>
+<!--Não se coloca um <blockquote> dentro de um <p>-->
+
+    <p>Em suas horas vagas, orkutilson era um membro ativo da <abbr title="Associação Comercial do Bairro do Limão">ASCOBALI</abbr>.<br> E estudava <abbr title="Hypertext Markup Language">HTML.</abbr>.<br> Suas TAGS favoritas eram <code>&lt;blockquote&gt;</code> e <code>&lt;adress&gt;</code></p>
+
+    <!-- o <abbr title=""> deve abrir, mas seu fechamento </abbr> é após a sigla: DEFINICÃO DE ABREVIAÇÕES
+    
+    <code> para citar uma tag usa os &lt; e o &gt; coloca-se entre as tags codes, há a função semântica-->
+
+        <p class="dir"><em>Autor: Desconhecido</em></p>
+
 </body>
 </html>
