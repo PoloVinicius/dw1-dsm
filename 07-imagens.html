@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+        /*Regras iniciadas com o # aplicam a regra CSS ao id com mesmo nome no html*/
+        #logo {
+            width: 100%; /*A imagem ocupará 100% da largura disponível*/
+            max-width: 360px;
+            }
+        figcaption{
+            font: Calibri, Arial, Sans;
+            font-style: italic;
+        }
+        figure{
+            text-align: center;
+        }
+        img#main{
+           box-shadow: 4px 4px 4px orangered;
+            width: 100%;
+        }
+        body{background-image: url("img/metal.jpg")}
+    </style>
+</head>
+    <body>
+        <!--Atributos da tag <img> (imagem)
+        src (source) -> o caminho para o arquivo de imagem que será exibido 
+        alt (texto alternativo)-> Um texto que será exibido no lugar da imagem caso o respectivo arquivo não seja encontrado-->
+        <img  id="logo" src="img/apptiva-logo.png" alt="Logo tipo da empresa Apptiva">
+        <!--<figure> Quando se deseja colocar legendas nas imagens-->
+        <figure>
+            <img id="main" src="img/distance-education-1000px.jpg" alt="educação a distancia" title="Venha estudar conosco">
+        <!--Legenda da imagem (semântico). Pode vir antes ou depois da <img>-->
+                <figcaption>A Apptiva oferece as melhores tecnologias para Educação a Distância. Faça como essa nossa aluna!</figcaption>
+        </figure>
+        <img style="width: 100%; max-width: 360px;" src="img/svg-logo.svg" alt="Logo SVG">
+        
+    </body>
+</html>
