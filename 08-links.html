@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links (hyperlinks ou hiperligações</title>
+    <link rel="stylesheet" href="/workspace/dw1-dsm/08.css">
 </head>
 <body>
     <h1>Estrutura de um link</h1>
@@ -31,11 +32,37 @@
 
         <p>Um link da internet é técnicamente chamado de URL (<em>Universal Resource Locator</em>): localizador universal de recursos</p>
 
-        <p>Links são acessados em HTML pela tag <a> (<em>anchor</em>, âncora). O parâmetro &lthref&gt indica o destino do link</p>
+        <p>Links são acessados em HTML pela tag &lta&gt (<em> anchor</em>, âncora). O parâmetro &lthref&gt indica o destino do link</p>
         <p>Sempre que o destino NÃO pertencer ao nosso próprio site, o URL precisa iniciar com o protocolo (http:// ou http://)</p>
 
+        <!--Link Externo: lreva para uma página em outro site
+        Precisa começar com http://  ou https://-->
 
-    
+        <div><a href="http://site.fatecfranca.edu.br" target=_blank>Site oficial da Fatec Franca</a><br>Esse link está com o target=_blank, indica que o link irá abrir em outra aba, usar o _self abre na mesma guia, padrão (desnecessário).<br>No começo da página tem um sem, para teste.</div>
+
+        <!--links interno: Leva para uma página do próprio site Não precisa começae com o prefixo do protocólo-->
+
+       <p>Se o link estiver no meio do paragrafo é mais interessante usar o &ltp&gt, por assim como o &ltdiv&gt é um elemento de bloco, <a href="07-imagens.html">Imagens</a> como nesse exeplo, o &ltdiv&gt deve ser a ultima opção para elementos de bloco.
+
+        <!--Podemos colocar imagens como recheio do link interno ou externo, é só buscar a imagem, no recheio do link, pode se colocar legenda-->
+
+    <div>
+        <a href="07-imagens.html" title="Página principal do site do Apptiva"><img src="img/apptiva-icon.png" alt="site do Apptiva"></a>
+    </div>
+
+    <!--Atributo rel -> estabelece a relação entre a pagina atual e a linkada
+    Atributo semantico
+    Nofollow, A pagina cita mais não endossa o link
+    prev- pagina anterior, mesmo site
+    next- proxima pagina
+    external - site externo, bom usar sempre
+    author - indica site pessoal do autor-->
+    <div><a href="https://www.google.com/aclk?sa=L&ai=DChcSEwi_-4_p07jvAhVSBJEKHWYOBlkYABAHGgJjZQ&ae=2&sig=AOD64_1jxyl3e2tyYX1wkxNvvgcy6YLpgw&ctype=5&q=&ved=2ahUKEwiKjYnp07jvAhUWMbkGHdLdCWQQ9aACegUIAhC-AQ&adurl=" rel="nofollow">Livro de HTML</a></div>
+<div><a href="07-imagens.html" rel="prev">Paginá anterior</a>|<a href=09-nãoexiste.html rel="next">Próxima página</a></div>
+    <div><a href="http://www.pudim.com.br" rel="external">Site do pudim</a></div>
+
+    <div><a href="https://www.linkedin.com/in/vinicius-polo-9138912a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9ExzUKoEShGBpRnTU4bNLg%3D%3D" rel="author" target="_blank">LinkedIN Vinicius Polo</a></div>
+
     
 </body>
 </html>

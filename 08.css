@@ -1,0 +1,12 @@
+a {
+    color: orangered;
+    text-decoration: none;
+}
+a:visited { 
+    color: yellow;
+}
+/*link enquanto o mouse está sobre ele*/
+a:hover {
+    filter: brightness(5%);
+    text-decoration: underline;
+}
