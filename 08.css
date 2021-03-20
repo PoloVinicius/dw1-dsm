@@ -7,6 +7,6 @@ a:visited {
 }
 /*link enquanto o mouse está sobre ele*/
 a:hover {
-    filter: brightness(5%);
+    background: gainsboro;
     text-decoration: underline;
 }
