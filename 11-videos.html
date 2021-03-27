@@ -8,6 +8,31 @@
 <body>
     <h1>Vídeos em HTML</h1>
 
+    <h2>Formatos de Vídeo</h2>
+
+    <p>Para entender os formatos de vídeo, é preciso entender primeiro o que são os <em>codecs</em> (cofificadores / decodificadores). Trata-se de algoritimos que codificam e depois decodificam várias imagens em sequencia para criar a ilisão de movimento. Laguns <em>codecs</em> de vídeo não lidam com a parte de som. Com isso, torna-se necessário acrescentar o áudio em uma parte separada, usando os formatos de áudio já estudados. </p>
+
+    <p>Para juntar as partes de vídeo, áudio e outras informações(como, por exemplo, as legendas) em um ùnico arquivo, existem os formatos <em>container</em>. Esses formatos podem parecer iguais por fora, enquanto, por dentro, trazem trilhas multimídia produzidas com <em>codecs</em> para decodificar para áudio e vídeo.<br>Os navegadores ytrazem instalados os <em>codecs</em> mais comuns. </p>
+    <!--Os codecs podem ser diferentes no mesmo tipo de arquivo, se não houver um leitor de codec adequedado, não faz a leiturar-->
+
+    <ul type= circle>
+        <li><Strong>MP4</Strong>:Formato introduzido em 2001 pela ISO(<em>International Standarts Organization</em>. Organizações Internacional de padrões), e que se tornou o padrão de mercado. É um formato <em>container</em>, que suporta vários <em>codecs</em> tanto de áudio como de vídeo, que usualmente estão sob comprenssão.</li>
+
+        <li><strong>M4V</strong>: Formato introduzido pelo Apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM (<em>Digital Rights Management</em>, Gerenciamento de Direitos digitais), permitindo que conteúdos protegidos por direitos autorais só possam ser reproduzidos por quem tiver adquirido a licença para tal.</li>
+
+        <li><strong>WEBM</strong>: Projeto irmão do Web, iniciado pela Fundação <a href="https://www.xiph.org/">Xiph.org</a> em 2010 e depois assumido pelo Google. É também um formato <em>conteiner</em>, que promete melhor qualidade de comprenssão em um menor tamanho de arquivo quando compardo ao MP4.</li>
+
+        <li><strong>OGV</strong>: Formato em <em>container</em> da família OGG Vorbis, introduzido pela fundação Xiph.org em 2004, de livre utilização.</li>
+
+        <li><strong>AVI</strong>: Sigle para <em>Audio Video InterLeaved</em> (Áudio e Vídeo entrelaçados), introduzido pelo Microsoft em 1992. É um formato sem compressão, tendendo a gerar arquivo muito grandes</li>
+    </ul>
+
+    <h2>Problemas com a hospedagem de vídeos</h2>
+
+    <p>Hospedar vídeos em seu próprio <em>website</em> pode sair caro, pois várias hospedagem atualmente combram por tráfego. Im típico vídeo de 500mb de tamanho, por exemplo, ao ser reproduzido 20 vezes, terá consumido 10 GB de tráfego (ou de banda, como se ouve com mais frequencia).</p>
+
+    <p>Portanto na maioria das vezes, o melhor a fazer é hospedar seu vídeo em servições como o <a href="https://youtube.com">Youtube</a> ou o <a href="https://vimeo.com">Vimeo</a> e apenas incorporar ("linkar") o seu vídeo em <em>site</em>. Enquanto vídeos hospedados no Youtube geralemente estarão dísponíveis para um público amplo ou o Vimeo, mediante pagamento, permite restringir o acesso aos vídeos.</p>
+
     <h2>Exemplo de vídeo com múltiplas fontes</h2>
 
     <h4>Parametros da tag video </h4>
@@ -23,6 +48,16 @@
             <p>Nõ foi possível baixar o vídeo. Faça o <a href="Untitled/_videos/reduzir-pdf.mp4" download="reduzir-pdf.mp4" type="video/mp4">Download</a> do arquivo</p>
            
         </video>
+
+    <h2>Vídeo incorporado do Youtube</h2>
+    <!--Vai até o youtube em share, incorporar e colar o iframe-->
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P8LxrpNQrTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+     <h2>Vídeo incorporado do Vimeo</h2>
+
+        <iframe src="https://player.vimeo.com/video/9674197" width="640" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<a href="https://vimeo.com/9674197">Alucinação, de Belchior, por Engenheiros do Hawaii</a>
     
 </body>
 </html>
