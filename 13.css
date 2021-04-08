@@ -1,0 +1,68 @@
+*{/* O asterisco significa que o css vale para todos os itens*/
+font-family: arial, geneva, tahoma, sans-serif;
+}
+/*
+1) Unidades de Medida
+
+- px (pixel): corresponde a um ponto de iluminação de tela, ou quando isso não puder ser determinado (no papelo por exemplo), equivale a 1/72 de uma polegada d(1 polegada = 2,54 cm). Seu tamanho, portanto, depende da resolução da tela.
+
+- pt (point): medida usada para o tamanho de fontes. Equivale a 1/72 de uma polegada
+
+-cm (centimetro): para impressão
+
+-mm (milimetro): para impressão
+
+-in(inches, polegadas): para impressão
+
+2) Unidades relativas
+        - em: usada para fontes. Significa 100% do tamanho da fonte do elemento pai
+        - rem: usada para fontes. Significa 100% da altura da fonte configurado para o elemento <html> (elemento raiz)
+        - %: sempre em relação ao tamanho do pai.
+        - vw:1% da altura do viewport do navegador
+        - vk:1% da largura do viewport do navegador 
+
+*/
+html{ /*Elemento Raiz*/
+    font-size: 20px;
+}
+
+div.container{
+    background-color: #999999;
+    font-size:15px;
+    padding:20px;
+    text-align: center;
+    height:800px;
+    border:5px dotted pink;
+
+}
+div.container div{
+    border: 2px solid black;
+    margin:0px 0px 10px 0px;
+}
+#box1{
+    background-color: yellow;
+    font-size: 1.5em;
+    height: 6%; /* Altura referente ao pai, o pai precisa estardeclarado*/
+}
+#box2{
+    background-color: red;
+    font-size: 30pt;
+    width: 50%; /*50% da largura do pai*/
+}
+#box3{
+    background-color: green;
+    font-size: 300%;
+    height: 40vh;
+}
+#box3-1{
+    font-size: 0.5em;
+    background-color: blue;
+    margin: 15px;
+}
+#box4{
+    background-color: black;
+    color: white;
+    border:2px solid white;
+    font-size: 3rem; /*3 vezes os 20px referente ao elemento raiz = 60px (html{})*/
+    width: 40vw; /*40% da largura da janela*/
+}
