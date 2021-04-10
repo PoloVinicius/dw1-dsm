@@ -21,6 +21,12 @@ font-family: arial, geneva, tahoma, sans-serif;
         - vw:1% da altura do viewport do navegador
         - vk:1% da largura do viewport do navegador 
 
+
+        HIERARQUIA DE REGRAS CSS
+        1) Regras de #id prevalecem sobre regras de classe.
+        2) Regras de Classe (.class) prevalecem sobre regras de elemento.
+        3) Entre Regras do mesmo tipo, prevalecem a que for aplicada por último (cascata).
+
 */
 html{ /*Elemento Raiz*/
     font-size: 20px;
@@ -33,6 +39,14 @@ div.container{
     text-align: center;
     height:800px;
     border:5px dotted pink;
+}
+p.container{
+        background-color: #999999;
+        font-size:15px;
+        padding:20px;
+        text-align: center;
+        height:15px;
+        border:5px dotted pink;
 
 }
 div.container div{
@@ -42,7 +56,7 @@ div.container div{
 #box1{
     background-color: yellow;
     font-size: 1.5em;
-    height: 6%; /* Altura referente ao pai, o pai precisa estardeclarado*/
+    height: 6%; /* Altura referente ao pai, o pai precisa estar declarado*/
 }
 #box2{
     background-color: red;
@@ -65,4 +79,9 @@ div.container div{
     border:2px solid white;
     font-size: 3rem; /*3 vezes os 20px referente ao elemento raiz = 60px (html{})*/
     width: 40vw; /*40% da largura da janela*/
+}
+.borda-dif{
+    border: 10px dashed purple;
+    width:75%;
+
 }
