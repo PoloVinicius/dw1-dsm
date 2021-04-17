@@ -24,7 +24,7 @@ h2 {
     font-size: 1.5em;
     text-align: left;
 }
-div#img{
+figure{
     text-align: center;
 }
 figcaption {
@@ -50,6 +50,9 @@ li#europa{
 }
 li#oceania{
     color:blue;
+}
+li#black{
+    color:black;
 }
 p{
     text-align: right;

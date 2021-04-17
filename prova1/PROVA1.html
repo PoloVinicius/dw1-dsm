@@ -35,12 +35,12 @@
          Centralize a imagem e a legenda horizontalmente com CSS.
          ok
     -->
-<div id="img">
+
   <figure>
     <img src="world-map.png">
     <figcaption>Mapa Mundi</figcaption>
   </figure>
-</div>
+
     <!--
       4. Estruture o texto seguinte com listas. A aparência final deve ser semelhante ao
          mostrado na imagem final.png.
@@ -77,41 +77,42 @@
            e. Fiji (capital: Suva)    
     -->
     <ol>
-      <li id="asia">Ásia</li>
+      <li id="asia">Ásia
         <ol type="a">
-          <li>Rússia (capital: Moscou)</li>
-          <li> China (capital: Pequim)</li>
-          <li> Índia (capital: Nova Délhi)</li>
-          <li>Cazaquistão (capital: Nur-Sultan)</li>
-          <li>Arábia Saudita (capital: Riad)</li></ol>
-      <li id="africa">África</li>
+          <li id="black">Rússia (capital: Moscou)</li>
+          <li id="black"> China (capital: Pequim)</li>
+          <li id="black"> Índia (capital: Nova Délhi)</li>
+          <li id="black">Cazaquistão (capital: Nur-Sultan)</li>
+          <li id="black">Arábia Saudita (capital: Riad)</li></ol></li>
+      <li id="africa">África
+      <ol type="a">
+          <li id="black">Argélia (capital: Argel)</li> 
+          <li id="black">República Democrática do Congo (capital: Kinshasa)</li>
+          <li id="black">Sudão (capital: Cartum)</li>
+          <li id="black">Líbia (capital: Trípoli)</li>
+          <li id="black">Chade (capital: N'Djamena)</li></ol></li>
+      <li id="america">Américas
         <ol type="a">
-          <li>Argélia (capital: Argel)</li> 
-          <li>República Democrática do Congo (capital: Kinshasa)</li>
-          <li>Sudão (capital: Cartum)</li>
-          <li>Líbia (capital: Trípoli)</li>
-          <li>Chade (capital: N'Djamena)</li></ol>
-      <li id="america">Américas</li>
+          <li id="black">Canadá (capital: Ottawa)</li>
+          <li id="black"> Estados Unidos (capital: Washington)</li>
+          <li id="black">Brasil (capital: Brasília)</li>
+          <li id="black">Argentina (capital: Buenos Aires)</li>
+          <li id="black">México (capital: Cidade do México)</li></ol></li>
+      <li id="europa">Europa
         <ol type="a">
-          <li>Canadá (capital: Ottawa)</li>
-          <li> Estados Unidos (capital: Washington)</li>
-          <li>Brasil (capital: Brasília)</li>
-          <li>Argentina (capital: Buenos Aires)</li>
-          <li>México (capital: Cidade do México)</li></ol>
-      <li id="europa">Europa</li>
+          <li id="black">Rússia (capital: Moscou)</li>
+          <li id="black">b. Ucrânia (capital: Kiev)</li>
+          <li id="black">França (capital: Paris)</li>
+          <li id="black">Espanha (capital: Madri)</li>
+          <li id="black">Suécia (capital: Estocolmo)</li></ol></li>
+      <li id="oceania">Oceania
         <ol type="a">
-          <li>Rússia (capital: Moscou)</li>
-          <li>b. Ucrânia (capital: Kiev)</li>
-          <li>França (capital: Paris)</li>
-          <li>Espanha (capital: Madri)</li>
-          <li>Suécia (capital: Estocolmo)</li></ol>
-      <li id="oceania">Oceania</li>
-        <ol type="a">
-          <li>Austrália (capital: Camberra)</li>
-          <li>Papua Nova Guiné (capital: Port Moresby)</li>
-          <li>Nova Zelândia (capital: Wellington)</li>
-          <li>Ilhas Salomão (capital: Honiara)</li>
-          <li>Fiji (capital: Suva)</li>
+          <li id="black">Austrália (capital: Camberra)</li>
+          <li id="black">Papua Nova Guiné (capital: Port Moresby)</li>
+          <li id="black">Nova Zelândia (capital: Wellington)</li>
+          <li id="black">Ilhas Salomão (capital: Honiara)</li>
+          <li id="black">Fiji (capital: Suva)</li>
+    </ol></li>
     </ol>    
     <!--
       5. Em CSS, coloque cada nome de continente, na lista acima, com uma cor diferente.
@@ -124,7 +125,7 @@
          aba do navegador.
          No CSS, alinhe este parágrafo à direita. ok
     -->
-<p>Fonte: <a href="https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_e_territ%C3%B3rios_por_%C3%A1rea" target="blank"> Wikipédia</a></p>
+<p>Fonte: <a href="https://pt.wikipedia.org/wiki/Lista_de_pa%C3%ADses_e_territ%C3%B3rios_por_%C3%A1rea" target="blank" rel="external"><!--rel, semantico, para indicar que a aba será aberta externamente--> Wikipédia</a></p>
     <!--
       7. Coloque um título de nível 2, com o texto "Extremos geográficos". O tamanho da fonte, no CSS, deve ser ajustado
          para uma vez e meia o tamanho da fonte do seu elemento pai.
