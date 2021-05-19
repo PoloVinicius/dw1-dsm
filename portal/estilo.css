@@ -5,6 +5,7 @@
 :root {
     --cor-primaria: #550000;
     --cor-secundaria: #ff7f2a;
+    --cor-secundaria-clara: #ffaf7b;
     --cor-fundo-clara: #ffffff;
     --cor-fundo-escura: #dddddd;
     --cor-texto-escura: #777777;
@@ -55,7 +56,7 @@ nav{
     display: flex;
     flex-direction: row;/*row= linha os conteudos ficarão em linha*/
 }
-section{
+main, aside {
     background-color:var(--cor-fundo-clara);
     padding: 10px;
     margin-bottom:20px;
@@ -63,26 +64,84 @@ section{
     border-radius: 10px;
     /*Sombra (drop-down shadow)*/
     box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+    display: block;
     flex-grow: 1; /*1 unidade de largura*/
 }
-#principal{
-    flex-grow: 4;
+main #principal{
+    display:block;
+    width:75%;
 }
-#secundario{
+aside{
     margin-left: 20px;
+    width:25%;
 }
-section article{
+article{
     margin: 24px;
 }
-section > h1{
+article  h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+main, aside h1{
     text-transform: uppercase;
     color: var(--cor-secundaria);
+}
+.manchete{
+    display: flex;
+    flex-direction: row;
+}
+.destaque img{
+    width:300px;
+    display: relative;
+    float: left;
+    border-radius: 6px;
 }
 
 article h1{
     font-size: 1.5rem;
     margin-bottom: 8px;
 }
-article > p{
+article  p{
     color:var(--cor-texto-escura);
+}
+.destaque{
+    background-color:var(--cor-secundaria-clara);
+    padding: 12px;
+    border-radius: 6px;
+}
+.destaque p{
+    color: #000000;
+    font-size: 1.5rem;
+    margin-left: 12px;
+}
+.destaque h1 a{
+    font-size: 2.5rem;
+}
+aside article img{
+    border-radius: 6px;
+}
+aside article a{
+    text-transform: none;
+    font-size: 1rem;
+}
+footer{
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+footer a, adress{
+    color:var(--cor-fundo-clara);
+    font-size: 0.8rem;
+}
+footer ul{
+    list-style-type: none;
+    display: inline-block;
+    margin: 12px 0px 12px 0px;
+    padding: 0 12px;
+    border-right: 1px solid #ffffff;
+}
+adress{
+    margin-left: 12px;
 }

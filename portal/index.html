@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Quebrada Online</title>
 </head>
 <body>
@@ -23,34 +28,57 @@
         </ul>
     </nav>
     <div class="content"> <!--Área de Conteúdo-->
-        <section id="principal">
-            <!--Section -> Agrupador de conteúdos semelhantes, dentro de uma section, segundo as informações, espera-se ter um título-->
-            <h1>Notícias</h1>
-            <article><!--Arigo Principal-->
-                <h1><a href="#">Tião da Venda e Carla Manicure se casam após 15 anos de noivado</a></h1>
-                <p>Festa de casamento foi interrompida após aparecerem 3 filhos de Tião, o  outro namorado de Carla, Anésio, também apareceu e causou confusão </p>
-            </article>
-            <article><!--Arigo Principal-->
-                <h1><a href="#">Zagueiro Zé Parrudo quebra a perna de atacante rival em jogo válido pelo campeonato Varzeano</a></h1>
-                <p>Falta foi dentro da área, mas por pressão dos jogadores, não foi marcado nada e o jogo seguiu</p>
-            </article>
-            <article><!--Arigo Principal-->
-                <h1><a href="#">Cido da Farmácia é detido após vender anabolizantes à Tonha Bombada</a></h1>
-                <p>Os esteróides não tinham nota fiscal e Tonha não tinha receita, ela também foi detida</p>
-            </article>
-            <article><!--Arigo Principal-->
-                <h1><a href="#">Litrão no bar do Zé Caneca se aproxima de 15R$</a></h1>
-                <p>Caneca lembra que os preços do bar da rua de trás, do Manuel, está a R$ 15,50</p>
-            </article>
-        </section>
-        <section id="secundario">    
-                <h1>Conteúdo relacionado</h1>
-                <aside><!--Assunto secundário-->
-                </aside>
-        </section>
+        <main id="principal">
+                <!--Section -> Agrupador de conteúdos semelhantes, dentro de uma section, segundo as informações, espera-se ter um título-->
+                <h1>Notícias</h1>
+                <article class="destaque"><!--Arigo Principal-->
+                    <h2>Social</h2>
+                    <h1><a href="#">Tião da Venda e Carla Manicure se casam após 15 anos de noivado</a></h1>
+                    <div class="manchete">
+                        <img src="img/tiaoecarla600x400.jpg" alt="Foto dos noivos com Padre Cicero" title="Foto: Felipe Menegazzi Barbosa">
+                        <p>Festa de casamento foi interrompida após aparecerem 3 filhos de Tião, o  outro namorado de Carla, Anésio, também apareceu e causou confusão </p>
+                    </div>
+                </article>
+                <article><!--Arigo Principal-->
+                    <h2>Esportes</h2>
+                    <h1><a href="#">Zagueiro Zé Parrudo quebra a perna de atacante rival em jogo válido pelo campeonato Varzeano</a></h1>
+                    <p>Falta foi dentro da área, mas por pressão dos jogadores, não foi marcado nada e o jogo seguiu</p>
+                </article>
+                <article><!--Arigo Principal-->
+                    <h2>Policial</h2>
+                    <h1><a href="#">Cido da Farmácia é detido após vender anabolizantes à Tonha Bombada</a></h1>
+                    <p>Os esteróides não tinham nota fiscal e Tonha não tinha receita, ela também foi detida</p>
+                </article>
+                <article><!--Arigo Principal-->
+                    <h2>Economia</h2>
+                    <h1><a href="#">Litrão no bar do Zé Caneca se aproxima de 15R$</a></h1>
+                    <p>Caneca lembra que os preços do bar da rua de trás, do Manuel, está a R$ 15,50</p>
+                </article>
+        </main>
+        <aside id="secundario"><!--Assunto secundário-->
+                <h1>Conteúdo patrocinado</h1>
+                <article>  
+                    <img src="img/cha320.jpg" alt="imagem cha" title="foto:fotografierende">
+                    <h1><a href="#">Mulher do Verdureiro perde 30kg tomando chá de Canabis com Camomila e choca toda a quebrada</a></h1>
+                </article> 
+                <article>
+                    <img src="img/malacheia320.jpg" alt="imagem cha" title="foto:fotografierende">
+                    <h1><a href="#">
+                        Ganhe muito dinheiro usando as redes sociais e sem sair de casa. NÃO É PIRAMIDE!</a></h1>
+                </article>      
+        </aside>
     </div>
     <footer><!--Rodapé-->
+        <ul><li><a href="#">Quem Somos</a></li></ul>
+        <ul><li><a href="#">Nossa Missão</a></li></ul>
+        <ul><li><a href="#">Comercial</a></li></ul>
+        <adress>
+            Rua do Sobe e Desce, 33<br>
+            Morro Alto da Serra/SP<br>
+            <a href="tel:+5511999999999">(16)99999-9999</a><br>
+            <a href="mailto: faleconosco@quebrada.com.br">faleconosco@quebrada.com.br</a>
 
+        </adress>
     </footer>
     
 </body>
