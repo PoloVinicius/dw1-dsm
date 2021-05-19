@@ -1,6 +1,15 @@
 /*@import, quando existem, devem ser o primeiro item de um arquivo CSS*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*Definição de variavéis*/
+:root {
+    --cor-primaria: #550000;
+    --cor-secundaria: #ff7f2a;
+    --cor-fundo-clara: #ffffff;
+    --cor-fundo-escura: #dddddd;
+    --cor-texto-escura: #777777;
+}
+
 *{
     padding:0;
     margin:0;
@@ -15,9 +24,20 @@
     
     Família de fontes da web (webfonts)*/
     font-family: Raleway, arial, calibri, sans;
+    font-size:16px;
+}
+a{
+    color:var(--cor-primaria);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+a:hover{
+    color:var(--cor-secundaria);
+    text-decoration: underline;
+    transition: 0.5s;
 }
 header{
-    background-color:#550000;
+    background-color: var(--cor-primaria);
     padding:10px 20px;
 }
 nav ul li{
@@ -25,6 +45,44 @@ nav ul li{
     margin: 5px;
 }   
 nav{    
-    background-color: #ff7f2a;
+    background-color:var(--cor-secundaria);
     color: #ffffff
+}
+.content{
+    background-color:var(--cor-fundo-escura);
+    padding: 20px;
+    /*Este elemento e seus filhos usarão flexbox*/
+    display: flex;
+    flex-direction: row;/*row= linha os conteudos ficarão em linha*/
+}
+section{
+    background-color:var(--cor-fundo-clara);
+    padding: 10px;
+    margin-bottom:20px;
+    /*Bordas arredondadadas*/
+    border-radius: 10px;
+    /*Sombra (drop-down shadow)*/
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+    flex-grow: 1; /*1 unidade de largura*/
+}
+#principal{
+    flex-grow: 4;
+}
+#secundario{
+    margin-left: 20px;
+}
+section article{
+    margin: 24px;
+}
+section > h1{
+    text-transform: uppercase;
+    color: var(--cor-secundaria);
+}
+
+article h1{
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+article > p{
+    color:var(--cor-texto-escura);
 }
