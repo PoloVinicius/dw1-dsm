@@ -26,6 +26,8 @@
     Família de fontes da web (webfonts)*/
     font-family: Raleway, arial, calibri, sans;
     font-size:16px;
+    box-sizing: border-box;
+    /*Faz com que as bordas e margens sejam considerados no tamanho total do elemento*/
 }
 a{
     color:var(--cor-primaria);
@@ -66,6 +68,7 @@ main, aside {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
     display: block;
     flex-grow: 1; /*1 unidade de largura*/
+    max-width:100%;
 }
 main #principal{
     display:block;
@@ -74,6 +77,7 @@ main #principal{
 aside{
     margin-left: 20px;
     width:25%;
+    background-color:var(--cor-fundo-escura)
 }
 article{
     margin: 24px;
@@ -91,7 +95,7 @@ main, aside h1{
     flex-direction: row;
 }
 .destaque img{
-    width:300px;
+    width:400px;
     display: relative;
     float: left;
     border-radius: 6px;
@@ -103,6 +107,7 @@ article h1{
 }
 article  p{
     color:var(--cor-texto-escura);
+    text-transform: none;
 }
 .destaque{
     background-color:var(--cor-secundaria-clara);
@@ -118,7 +123,11 @@ article  p{
     font-size: 2.5rem;
 }
 aside article img{
+    display: block;
+    margin: 0 auto;
     border-radius: 6px;
+    /*Faz com que o elemento não estoure o tamanho do pai*/
+    max-width: 100%;
 }
 aside article a{
     text-transform: none;
@@ -189,4 +198,54 @@ header{
     filter: brightness(.8);
     background-color:var(--cor-secundaria);
     text-decoration: none;
+}
+@media screen and (max-width: 1020px){/*Ponto de quebra*/
+    main {
+        width: 67%;
+    }
+    aside {
+        width: 33%;
+    }
+    .manchete{
+        flex-direction: column;
+    }
+    .destaque img{
+        margin-top: 0;
+        margin-bottom: 24px;
+        width:100%;
+    }
+
+}
+@media screen and (max-width: 800px){/*2º Break Point*/
+    .content{
+        flex-direction: column;
+    }
+    main, aside{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    aside article h1{
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer ul li{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    footer ul li:first-child{
+        padding-left:0px;
+    }
+
+}
+@media screen and (max-width: 640px){
+    .social ul li{
+        display: flow-root;
+    }
+    .social span{
+        display:flow-root;
+    }
 }
