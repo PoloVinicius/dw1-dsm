@@ -199,6 +199,38 @@ header{
     background-color:var(--cor-secundaria);
     text-decoration: none;
 }
+#menu-contraido{
+    margin: 24px;
+    display:inline-block;
+    /*width: 32px;
+    height:32px;*/
+}
+#menu-contraido input, #menu-contraido span {
+    width: 40px;
+    height:40px;
+    position: absolute;
+    cursor: pointer;
+
+
+}
+#menu-contraido input{
+    z-index:999;
+    opacity:0;
+    display:none;
+}
+#menu-contraido span {
+    display: block;
+    background-color:var(--cor-primaria);
+    border-radius: 4px;
+    background-image: url("img/menu-icon-48x48.png");
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer;
+    display: none;
+}
+#menu-contraido input:checked ~span{
+    background-image: url("img/close-icon-48x48.png");
+}
 @media screen and (max-width: 1020px){/*Ponto de quebra*/
     main {
         width: 67%;
@@ -217,8 +249,34 @@ header{
 
 }
 @media screen and (max-width: 800px){/*2º Break Point*/
+    #menu{
+        min-height: block;
+    }
+    #menu ul{
+        margin-top:50px;
+    } 
+    #menu div ul li{ /*Menu vertical*/
+        display: block;
+    }  
+    #menu-contraido{
+        margin-top: 24px;
+    }
+    #menu-contraido ul{
+        display: none;
+    }
+    /*mostra o botão do menu*/
+    #menu-contraido input, #menu-contraido span{
+        display: block;
+    }
+    #menu-contraido input:checked ~ul{
+        display: block;
+    }
+
     .content{
         flex-direction: column;
+    }
+     ul li{
+        display: block;
     }
     main, aside{
         width: 100%;
