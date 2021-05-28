@@ -219,6 +219,7 @@ header{
     display:none;
 }
 #menu-contraido span {
+
     display: block;
     background-color:var(--cor-primaria);
     border-radius: 4px;
@@ -258,6 +259,12 @@ header{
     #menu div ul li{ /*Menu vertical*/
         display: block;
     }  
+    nav div ul li{
+        display:grid;
+    }
+    nav div ul{
+        margin-top: 50px;
+    }
     #menu-contraido{
         margin-top: 24px;
     }
@@ -297,7 +304,10 @@ header{
     footer ul li:first-child{
         padding-left:0px;
     }
-
+    .social li a span{
+        display: none;
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 640px){
     .social ul li{
